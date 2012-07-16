@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+ <path>gmeter.ac</path>
+ 
+ <animation>
+    <type>material</type>
+    <object-name>Face</object-name>
+    <object-name>Gneedle1</object-name>
+    <object-name>Gneedle2</object-name>
+	<object-name>Gneedle3</object-name>
+    <emission>
+      <red>   0.030 </red>
+      <green> 0.015 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+  
+  <animation>
+  <type>rotate</type>
+  <object-name>Gneedle1</object-name>
+  <property>accelerations/pilot-gmax</property>
+  <factor>22.5</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>Gneedle2</object-name>
+  <property>accelerations/pilot-g</property>
+  <factor>22.5</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Gneedle3</object-name>
+  <property>accelerations/pilot-gmin</property>
+  <factor>22.5</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+                               
+</PropertyList>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+ 
+    <author>Pierre Duval (3D)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+   
+    <fuel-fraction>0.8</fuel-fraction>
+  
+    <startup>
+      <splash-texture>Aircraft/XB-70/XB-70-splash.png</splash-texture>
+    </startup>
+	
+	<model>
+      <path>Aircraft/XB-70/Models/XB-70.xml</path>
+    </model>
+	
+	<submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/XB-70/Models/Weapons/DropIT.xml</path>
+    </submodels>
+	
+	
+    <sound>
+      <path>Aircraft/XB-70/Sounds/XB-70-sound.xml</path>
+    </sound>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int" n="0">0</int>
+        <int type="int" n="1">0</int>
+        <int type="int" n="2">0</int>
+        <int type="int" n="3">0</int>
+        <int type="int" n="4">0</int>
+        <int type="int" n="5">0</int>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>XB-70 North American Valkyrie</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close crew door</desc>
+      </key>
+      <key>
+        <name>D</name>
+        <desc>Open/Close weapons bay door</desc>
+      </key>>
+      <key>
+        <name>f</name>
+        <desc>Max speed geometry</desc>
+      </key>
+      <key>
+		<name>Ctrl-B</name>
+		<desc>Drag chutes</desc>
+	  </key>
+      <key>
+        <name>Ctrl-j</name>
+        <desc>Release bomb</desc>
+      </key>	  
+    </help>
+
+    <menubar include="Dialogs/XB-70-menu.xml"/>
+
+  </sim>
+
+  <surface-positions>
+    <wing-fold-pos-norm alias="/instrumentation/doors/wings/position-norm" />
+  </surface-positions>
+
+  <input>
+      <keyboard include="Nasal/xb-70-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <xb70>
+      <file>Aircraft/XB-70/Nasal/doors.nas</file>
+      <file>Aircraft/XB-70/Nasal/light.nas</file>
+    </xb70>
+  </nasal>
+
+</PropertyList>
