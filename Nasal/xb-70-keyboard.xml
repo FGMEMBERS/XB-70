@@ -7,7 +7,7 @@
     <desc>bay</desc>
     <binding>
      <command>nasal</command>
-     <script>xb70.doorsystem.passengerexport();</script>
+     <script>doors.doorsystem.passengerexport();</script>
     </binding>
    </key>
 
@@ -16,19 +16,10 @@
     <desc>door</desc>
     <binding>
      <command>nasal</command>
-     <script>xb70.doorsystem.crewexport();</script>
+     <script>doors.doorsystem.crewexport();</script>
     </binding>
    </key>
 
-   <key n="102">
-    <name>f</name>
-    <desc>Wings</desc>
-    <binding>
-     <command>nasal</command>
-     <script>xb70.doorsystem.wingsexport();</script>
-    </binding>
-   </key>
-   
    <key n="10">
     <name>Ctrl-j</name>
     <desc>Jump signal</desc>

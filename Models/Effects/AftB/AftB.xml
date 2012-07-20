@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>AftB.ac</path>
+     
+  <animation>
+    <type>noshadow</type>
+    <object-name>AftB</object-name>
+  </animation>
+ 
+  <animation>
+    <type>select</type>
+    <object-name>AftB</object-name>
+    <condition>
+      <greater-than>
+        <property>velocities/airspeed-kt</property>
+        <value>50</value>
+      </greater-than>
+    </condition>
+  </animation>
+	 
+</PropertyList>
+

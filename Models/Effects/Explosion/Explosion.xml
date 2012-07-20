@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+ 
+  <path>Explosion.ac</path>
+
+  <animation>
+    <type>select</type>
+    <object-name>Expl1</object-name>
+    <object-name>Expl2</object-name>
+    <object-name>Expl3</object-name>
+    <condition>
+      <equals>
+        <property>sim/crashed[0]</property>
+        <value>true</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>scale</type>
+    <object-name>Expl1</object-name>
+    <object-name>Expl2</object-name>
+    <object-name>Expl3</object-name>
+    <property>velocities/airspeed-kt[0]</property>
+    <interpolation>
+      <entry><ind>  0 </ind><dep>   1 </dep></entry>
+      <entry><ind> 20 </ind><dep>  10 </dep></entry>
+      <entry><ind> 40 </ind><dep> 100 </dep></entry>
+    </interpolation>
+  </animation>
+
+</PropertyList>

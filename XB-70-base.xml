@@ -13,32 +13,50 @@
     <startup>
       <splash-texture>Aircraft/XB-70/XB-70-splash.png</splash-texture>
     </startup>
-	
-	<model>
+
+    <model>
       <path>Aircraft/XB-70/Models/XB-70.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
     </model>
-	
-	<submodels>
+
+    <submodels>
       <serviceable type="bool">true</serviceable>
       <path>Aircraft/XB-70/Models/Weapons/DropIT.xml</path>
     </submodels>
-	
-	
+
     <sound>
       <path>Aircraft/XB-70/Sounds/XB-70-sound.xml</path>
     </sound>
 
     <multiplay>
       <chat_display>1</chat_display>
-      <generic>
-        <int type="int" n="0">0</int>
-        <int type="int" n="1">0</int>
-        <int type="int" n="2">0</int>
-        <int type="int" n="3">0</int>
-        <int type="int" n="4">0</int>
-        <int type="int" n="5">0</int>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
+        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
+        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
+        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
       </generic>
     </multiplay>
+
+    <systems>
+      <autopilot>
+        <path>Aircraft/XB-70/Systems/autopilot.xml</path>
+      </autopilot>
+    </systems> 
 
     <help>
       <title>XB-70 North American Valkyrie</title>
@@ -55,9 +73,9 @@
         <desc>Max speed geometry</desc>
       </key>
       <key>
-		<name>Ctrl-B</name>
-		<desc>Drag chutes</desc>
-	  </key>
+	      <name>Ctrl-B</name>
+	      <desc>Drag chutes</desc>
+      </key>
       <key>
         <name>Ctrl-j</name>
         <desc>Release bomb</desc>
@@ -77,9 +95,13 @@
   </input>
  
   <nasal>
-    <xb70>
+    <doors>
       <file>Aircraft/XB-70/Nasal/doors.nas</file>
+    </doors>
+    <xb70>
+      <file>Aircraft/XB-70/Nasal/liveries.nas</file>
       <file>Aircraft/XB-70/Nasal/light.nas</file>
+      <file>Aircraft/XB-70/Nasal/reheat.nas</file>
     </xb70>
   </nasal>
 

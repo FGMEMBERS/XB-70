@@ -11,6 +11,7 @@ Septembre 2011 Pierre Duval
   <sim>
 
     <description>North American Valkyrie XB-70 (YASim)</description>
+    <author>Pierre Duval (3D), Lionel ADAM (FDM)</author>
     <flight-model>yasim</flight-model>
     <aero>XB-70-yasim</aero>
 

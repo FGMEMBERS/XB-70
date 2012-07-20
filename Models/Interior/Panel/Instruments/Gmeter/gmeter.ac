@@ -1114,7 +1114,7 @@ OBJECT poly
 name "Face"
 data 10
 Circle.001
-texture "GMeter.png"
+texture "gmeter.png"
 texrep 1 1
 crease 30.000000
 numvert 33
