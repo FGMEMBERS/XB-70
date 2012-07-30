@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- North American XB-70 Valkyrie  : DUVAL Pierre(2012)
-                         Updated by : Lionel ADAM (19/07/2012)
+                         Updated by : Lionel ADAM (28/07/2012)
 
      Sources             : http://en.wikipedia.org/wiki/North_American_XB-70_Valkyrie
 
@@ -29,14 +29,14 @@
     <control-setting axis="/controls/engines/engine[3]/afterburner" value="0.16"/>
     <control-setting axis="/controls/engines/engine[4]/afterburner" value="0.16"/>
     <control-setting axis="/controls/engines/engine[5]/afterburner" value="0.16"/>
-    <!-- <control-setting axis="/controls/flight/flaps" value="1.0"/> -->
+    <control-setting axis="/controls/flight/flaps" value="1.0"/>
     <control-setting axis="/controls/flight/speedbrake" value="0.0"/>
     <control-setting axis="/controls/gear/gear-down" value="1"/>
     <control-setting axis="/controls/flight/wing-sweep" value="0.0"/>
   </approach>
 
   <!-- Cruise configuration -->
-  <cruise speed="1510" alt="80000" fuel="0.65">
+  <cruise speed="1780" alt="80000" fuel="0.85">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.9"/>
     <control-setting axis="/controls/engines/engine[1]/throttle" value="0.9"/>
     <control-setting axis="/controls/engines/engine[2]/throttle" value="0.9"/>
@@ -49,7 +49,7 @@
     <control-setting axis="/controls/engines/engine[3]/afterburner" value="0.81"/>
     <control-setting axis="/controls/engines/engine[4]/afterburner" value="0.81"/>
     <control-setting axis="/controls/engines/engine[5]/afterburner" value="0.81"/>
-    <!-- <control-setting axis="/controls/flight/flaps" value="0.0"/> -->
+    <control-setting axis="/controls/flight/flaps" value="0.0"/>
     <control-setting axis="/controls/flight/speedbrake" value="0.0"/>
     <control-setting axis="/controls/gear/gear-down" value="0"/>
     <control-setting axis="/controls/flight/wing-sweep" value="1.0"/>
@@ -66,18 +66,18 @@
   <fuselage ax="2.858" ay="2.516" az="1.742" bx="-24.270" by="2.516" bz="2.011" width="3.01" taper="0.65" midpoint="0.17"/>
 
   <!-- Wings Main-->
-  <wing x="-10" y="0.76" z="2.746"
-        chord="36.896" 
+  <wing x="-7.5" y="0.76" z="2.746"
+        chord="31.05" 
         length="14"
         taper="0.5"
-        sweep="45"
+        sweep="40"
         dihedral="0"
-        twist="-0.0"
+        twist="-1.0"
         incidence="1.0"
-        camber="0.06">
+        camber="0.02">
         <stall aoa="16" width="5" peak="1.5"/>
         <flap0 start="0" end="0.95" lift="1.9" drag="1.5"/>
-        <flap1 start="0" end="0.95" lift="1.0" drag="80"/>
+        <flap1 start="0" end="0.95" lift="1.0" drag="400"/>
         
         <control-input axis="/controls/flight/aileron" control="FLAP0" split="true"/> 
         <control-input axis="/controls/flight/aileron-trim" control="FLAP0" split="true"/>
@@ -88,32 +88,35 @@
         <control-output control="FLAP0" prop="/surface-positions/aileron-pos-norm"/>
         
         <control-speed control="FLAP0" transition-time="1"/>
+        <control-speed control="FLAP1" transition-time="1"/>
    </wing>
   
    <!--Stabilizers(Canards)-->
+   
    <mstab x="18.570" y="1.096" z="4.470"
         chord="5.087"
         length="3.235"
         taper="0.60"
         sweep="12.10"
-        camber="0.00"
-        incidence="0.00"
-        dihedral="0.0">
+        camber="-0.00"
+        incidence="0.0"
+	twist="-0.0"
+        dihedral="0.0"
+	effectiveness="1.0">
         <stall aoa="21" width="4" peak="1.2"/>
         <flap0 start="0.1" end="0.95" lift="1.0" drag="20"/>
-        <flap1 start="0.1" end="1" lift="2" drag="2"/>
+        <flap1 start="0.1" end="1" lift="1.4" drag="1.3"/>
   
         <control-input axis="/controls/flight/speedbrake" control="FLAP0"/>
-        <control-input axis="/controls/flight/elevator" control="FLAP1" invert = "true"/>
-        <control-input axis="/controls/flight/elevator-trim" control="FLAP1" invert = "true"/>
+        <control-input axis="/controls/flight/flaps" control="FLAP1"/>
 
         <control-output control="FLAP0" prop="/surface-positions/speedbrake-pos-norm"/>
         <control-output control="FLAP1" side="left" prop="/surface-positions/left-flap-pos-norm"/>
         <control-output control="FLAP1" side="right" prop="/surface-positions/right-flap-pos-norm"/>
         <control-output control="FLAP1" prop="/surface-positions/flap-pos-norm"/>
         
-        <control-speed control="FLAP0" transition-time="5"/>
-        <control-speed control="FLAP1" transition-time="1"/>
+        <control-speed control="FLAP0" transition-time="1"/>
+        <control-speed control="FLAP1" transition-time="10"/>
   </mstab>
 
   <!--Wing Tips-->
@@ -124,8 +127,8 @@
         sweep="45"
         camber="0.00"
         dihedral="0.0"
-        incidence="1.0"
-        twist="-6"
+        incidence="0.0"
+        twist="1"
         effectiveness="1.0">
         <stall aoa="21" width="4" peak="1.2"/>
         <flap0 start="0.9" end="1.0" lift="1.0" drag="1"/>
@@ -137,21 +140,21 @@
 
         <control-output control="FLAP0" prop="/surface-positions/wing-fold-pos-norm"/>
         
-        <control-speed control="FLAP0" transition-time="5"/>
+        <control-speed control="FLAP0" transition-time="65"/>
         <control-speed control="FLAP1" transition-time="1"/>
   </mstab>
 
   <!--Profondeur-->
-  <hstab x="-24.828" y="4.0" z="2.746"
-        chord="2.9" 
-        length="7"
+  <hstab x="-24.17" y="0.93" z="2.746"
+        chord="2.95" 
+        length="8.53"
         taper="1.0"
         sweep="0.0"
         dihedral="0.0"
-        camber="0.04"
+        camber="0.00"
         effectiveness="1.0">
-        <stall aoa="16" width="1.0" peak="1.5"/>		
-        <flap0 start="0" end="1.0" lift="1.7" drag="1.3"/>
+        <stall aoa="21" width="5.0" peak="1.5"/>		
+        <flap0 start="0" end="1.0" lift="1.7" drag="1.4"/>
 
         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
@@ -161,6 +164,28 @@
         <control-speed control="FLAP0" transition-time="1"/>      
   </hstab>
 
+<!-- Compense la tendance a cabrer, simule le deplacement vers l'arriere du centre de poussee avec la vitesse, et l'effet contraire des wings tips -->
+
+  <mstab x="-24.17" y="0.93" z="2.746"
+        chord="2.95" 
+        length="8.53"
+        taper="1.0"
+        sweep="0.0"
+        dihedral="0.0"
+	incidence="-1.0"
+        camber="0.00"
+	twist="-2"
+        effectiveness="1.0">
+        <stall aoa="21" width="5.0" peak="1.5"/>		
+        <flap0 start="0" end="1.0" lift="1.7" drag="1.0"/>
+
+	<control-input axis="/velocities/airspeed-kt" control="FLAP0" src0="300" src1="600" dst0="0.0" dst1="0.25"/>
+        <control-input axis="/velocities/mach" control="FLAP0" src0="0.67" src1="1.4" dst0="0.0" dst1="0.20"/>
+        <control-input axis="/surface-positions/wing-fold-pos-norm" control="FLAP0" src0="0" src1="1.0" dst0="0.0" dst1="-0.20"/>
+        <control-speed control="FLAP0" transition-time="1"/>      
+  </mstab>
+
+
   <!--Rudders -->
   <!--Left -->
   <vstab x="-21.538" y="4.022" z="2.731"
@@ -169,7 +194,7 @@
          chord="7.815"
          sweep="35.45">
          <stall aoa="20" width="5" peak="1.5"/>
-         <flap0 start="0.0" end="0.64" lift="1.10" drag="1.05"/>
+         <flap0 start="0.0" end="0.64" lift="1.40" drag="1.30"/>
 
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
@@ -186,7 +211,7 @@
          chord="7.815"
          sweep="35.45">
          <stall aoa="20" width="5" peak="1.5"/>
-         <flap0 start="0.0" end="0.64" lift="1.10" drag="1.05"/>
+         <flap0 start="0.0" end="0.64" lift="1.40" drag="1.30"/>
 
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
@@ -206,12 +231,13 @@
                  weight            :  4800 lb 
   -->
   <!-- 6 x J52 General Electric YJ93-GE-3 -->
+  <!-- tsfc faked for range -->
   <jet x="-13.609" y="3.718" z="1.986"
        mass="5000"
        thrust="19900"
        afterburner="28800"
-       tsfc="0.7"
-       atsfc="1.8"
+       tsfc="0.25" 
+       exhaust-speed="1830"
        egt="950"
        spool-time="3">
        <actionpt x="-25.238" y="3.718" z="2.778"/>
@@ -223,8 +249,8 @@
        mass="5000"
        thrust="19900"
        afterburner="28800"
-       tsfc="0.7"
-       atsfc="1.8"
+       tsfc="0.25"
+       exhaust-speed="1830"
        egt="950"
        spool-time="3">
        <actionpt x="-25.238" y="2.229" z="2.778"/>
@@ -236,8 +262,8 @@
        mass="5000"
        thrust="19900"
        afterburner="28800"
-       tsfc="0.7"
-       atsfc="1.8"
+       tsfc="0.25"
+       exhaust-speed="1830"
        egt="950"
        spool-time="3">
        <actionpt x="-25.238" y="0.741" z="2.778"/>
@@ -249,8 +275,8 @@
        mass="5000"
        thrust="19900"
        afterburner="28800"
-       tsfc="0.7"
-       atsfc="1.8"
+       tsfc="0.25"
+       exhaust-speed="1830"
        egt="950"
        spool-time="3">
        <actionpt x="-25.238" y="-0.741" z="2.778"/>
@@ -262,8 +288,8 @@
        mass="5000"
        thrust="19900"
        afterburner="28800"
-       tsfc="0.7"
-       atsfc="1.8"
+       tsfc="0.25"
+       exhaust-speed="1830"
        egt="950"
        spool-time="3">
        <actionpt x="-25.238" y="-2.229" z="2.778"/>
@@ -275,8 +301,8 @@
        mass="5000"
        thrust="19900"
        afterburner="28800"
-       tsfc="0.7"
-       atsfc="1.8"
+       tsfc="0.25"
+       exhaust-speed="1830"
        egt="950"
        spool-time="3">
        <actionpt x="-25.238" y="-3.718" z="2.778"/>
@@ -287,7 +313,7 @@
   <!-- nose -->
   <gear x="4.544" y="0.0" z="-2.058" 
         compression="0.5" 
-        retract-time="5" 
+        retract-time="20" 
         spring="1.0" 
         damp="3.5" 
         sfric="0.9" 
@@ -295,13 +321,13 @@
         <control-input axis="/controls/flight/rudder" control="STEER" square="false"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
-        <control-speed control="EXTEND" transition-time="7"/>
+        <control-speed control="EXTEND" transition-time="23"/>
   </gear>
 
   <!-- left main -->
   <gear x="-10.450" y="-3.542" z="-2.058"
         compression="1.0" 
-        retract-time="5" 
+        retract-time="20" 
         spring="1.0" 
         damp="3.5" 
         sfric="0.9" 
@@ -310,13 +336,13 @@
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         <control-output control="EXTEND" prop="gear/gear[1]/position-norm"/>
-        <control-speed control="EXTEND" transition-time="7"/>
+        <control-speed control="EXTEND" transition-time="23"/>
   </gear>
  
   <!-- right main -->
   <gear x="-10.450" y="3.542" z="-2.058"  
         compression="1.0" 
-        retract-time="5" 
+        retract-time="20" 
         spring="1.0" 
         damp="3.5" 
         sfric="0.9" 
@@ -325,22 +351,25 @@
         <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         <control-output control="EXTEND" prop="gear/gear[2]/position-norm"/>
-        <control-speed control="EXTEND" transition-time="7"/>
+        <control-speed control="EXTEND" transition-time="23"/>
   </gear>
 
-  <!-- Fuselage -->
-  <tank x="-4.0" y="0.0" z="3.531" jet="true" capacity="150000"/>
+<!-- Capacite totale correcte, mais pas la repartition et le nombre de reservoirs -->
 
-  <!-- Wing -->
-  <tank x="-14.0" y= "4.084" z="2.369" jet="true" capacity="75000"/>
-  <tank x="-14.0" y="-4.084" z="2.369" jet="true" capacity="75000"/>
+  <tank x="-4.54" y="1.0" z="3.90" jet="true" capacity="75000"/>
+  <tank x="-4.54" y="-1.0" z="3.90" jet="true" capacity="75000"/>
+  <tank x="-14.54" y= "4.084" z="3.32" jet="true" capacity="75000"/>
+  <tank x="-14.54" y="-4.084" z="3.32" jet="true" capacity="75000"/>
+
 
   <!-- CG  -->
+
   <ballast x=" 51" y="  0" z=" 2.708" mass="37266"/>
   <ballast x="-69" y="  0" z=" 2.708" mass="37266"/>
   <ballast x=" -9" y=" 10" z=" 2.708" mass="37266"/>
   <ballast x=" -9" y="-10" z=" 2.708" mass="37266"/>
   <ballast x=" -9" y="  0" z=" 5.708" mass="37266"/>
   <ballast x=" -9" y="  0" z="-1.282" mass="37266"/>
+
   
 </airplane>

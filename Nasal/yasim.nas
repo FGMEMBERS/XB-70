@@ -9,14 +9,14 @@ var t2=getprop("/controls/engines/engine[2]/throttle");
 var t3=getprop("/controls/engines/engine[3]/throttle");
 var t4=getprop("/controls/engines/engine[4]/throttle");
 var t5=getprop("/controls/engines/engine[5]/throttle");
-var spoilers = 0.25*(mach+1)*(1-((t0+t1)/2));
+var spoilers = 0.10*(mach+1)*(1-((t0+t1+t2+t3+t4+t5)/6));
 var a0=t0*t0;
 var a1=t1*t1;
 var a2=t2*t2;
 var a3=t3*t3;
 var a4=t4*t4;
 var a5=t5*t5;
-var fold=0;
+# var fold=0;
 
 if (getprop("/controls/gear/gear-down")) {spoilers = spoilers+0.1;}
 
@@ -53,16 +53,16 @@ a5 = 0;
 spoilers = 1;
 }
 
-if (IAS > 550) {spoilers = spoilers+(IAS-550)/100;}
-if ((mach > 0.9) and (mach <= 1.0)) {spoilers = spoilers+0.3*(mach-0.9)/0.1;}
-if ((mach > 1.0) and (mach < 1.15)) {spoilers = spoilers+0.3*(1.15-mach)/0.15;}
+if (IAS > 630) {spoilers = spoilers+(IAS-630)/100;}
+if ((mach > 0.9) and (mach <= 1.0)) {spoilers = spoilers+0.20*(mach-0.9)/0.1;}
+if ((mach > 1.0) and (mach < 1.15)) {spoilers = spoilers+0.20*(1.15-mach)/0.15;}
 spoilers = spoilers+getprop("/controls/flight/speedbrake");
 if (spoilers > 1) {spoilers = 1;}
 
-if (mach > 0.85) {fold=0.4;}
-if (mach > 2.0) {fold=1.0;}
-if (mach < 1.9) {fold=0.4;}
-if (mach < 0.75) {fold=0.0;}
+# if ((mach > 0.95) or (IAS > 400)) {fold=0.4;}
+# if (mach > 1.4) {fold=1.0;}
+# if (mach < 1.3) {fold=0.4;}
+# if ((mach < 0.85) and (IAS < 380)) {fold=0.0;}
 
 setprop("/controls/engines/engine[0]/afterburner", a0);
 setprop("/controls/engines/engine[1]/afterburner", a1);
@@ -71,7 +71,7 @@ setprop("/controls/engines/engine[3]/afterburner", a3);
 setprop("/controls/engines/engine[4]/afterburner", a4);
 setprop("/controls/engines/engine[5]/afterburner", a5);
 setprop("/controls/flight/spoilers",spoilers);
-setprop("/controls/flight/wing-sweep",fold);
+# setprop("/controls/flight/wing-sweep",fold);
 settimer(reheat, 0.2);
 
 }

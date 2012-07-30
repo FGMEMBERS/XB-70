@@ -11,6 +11,21 @@
     </binding>
    </key>
 
+   <key n="70">
+    <name>F</name>
+    <desc>wing tips down</desc>
+  <binding>
+   <command>nasal</command>
+   <script>controls.wingSweep(1)</script>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>nasal</command>
+    <script>controls.wingSweep(0)</script>
+   </binding>
+  </mod-up>
+   </key>
+
    <key n="100">
     <name>d</name>
     <desc>door</desc>
@@ -18,6 +33,21 @@
      <command>nasal</command>
      <script>doors.doorsystem.crewexport();</script>
     </binding>
+   </key>
+
+   <key n="102">
+    <name>f</name>
+    <desc>wing tips up</desc>
+  <binding>
+   <command>nasal</command>
+   <script>controls.wingSweep(-1)</script>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>nasal</command>
+    <script>controls.wingSweep(0)</script>
+   </binding>
+  </mod-up>
    </key>
 
    <key n="10">

@@ -15,6 +15,19 @@ Septembre 2011 Pierre Duval
     <flight-model>yasim</flight-model>
     <aero>XB-70-yasim</aero>
 
+ <systems>
+  <autopilot>
+   <path>Aircraft/XB-70/Systems/autopilot-yasim.xml</path>
+  </autopilot>
+ </systems> 
+
+
   </sim>
-    
+  
+  <nasal>
+    <XB70>
+      <file>Aircraft/XB-70/Nasal/yasim.nas</file>
+    </XB70>
+  </nasal>
+  
 </PropertyList>

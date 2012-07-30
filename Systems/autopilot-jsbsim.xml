@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0"?>
  
 <!-- Generic Autopilot Configuration -->
 
@@ -127,15 +127,15 @@
       <prop>/autopilot/internal/target-roll-deg</prop>
     </output>
     <config>
-      <Kp>-0.5</Kp>        <!-- proportional gain -->
+      <Kp>-1.0</Kp>        <!-- proportional gain -->
       <beta>1.0</beta>     <!-- input value weighing factor -->
       <alpha>0.1</alpha>   <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>   <!-- input value weighing factor for -->
                            <!-- unfiltered derivative error -->
       <Ti>40.0</Ti>        <!-- integrator time -->
       <Td>0.00001</Td>     <!-- derivator time -->
-      <u_min>-20.0</u_min> <!-- minimum output clamp -->
-      <u_max>20.0</u_max>  <!-- maximum output clamp -->
+      <u_min>-40.0</u_min> <!-- minimum output clamp -->
+      <u_max>40.0</u_max>  <!-- maximum output clamp -->
     </config>
   </pid-controller>
 
@@ -157,7 +157,7 @@
       <prop>/controls/flight/aileron-trim</prop>
     </output>
     <config>
-      <Kp>0.02</Kp>        <!-- proportional gain -->
+      <Kp>0.015</Kp>        <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
@@ -343,12 +343,12 @@
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.003</Kp>      <!-- proportional gain -->
+      <Kp>-0.005</Kp>      <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
                           <!-- unfiltered derivative error -->
-      <Ti>80.0</Ti>       <!-- integrator time -->
+      <Ti>100.0</Ti>       <!-- integrator time -->
       <Td>0.00001</Td>    <!-- derivator time -->
       <u_min>-1.0</u_min> <!-- minimum output clamp -->
       <u_max>1.0</u_max>  <!-- maximum output clamp -->
@@ -401,12 +401,12 @@
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.005</Kp>      <!-- proportional gain -->
+      <Kp>-0.015</Kp>      <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
                           <!-- unfiltered derivative error -->
-      <Ti>10.0</Ti>       <!-- integrator time -->
+      <Ti>40.0</Ti>       <!-- integrator time -->
       <Td>0.00001</Td>    <!-- derivator time -->
       <u_min>-1.0</u_min> <!-- minimum output clamp -->
       <u_max>1.0</u_max>  <!-- maximum output clamp -->
@@ -528,7 +528,7 @@
       <value>speed-with-pitch-trim</value>
     </enable>
     <input>
-      <prop>/velocities/airspeed-kt</prop>
+      <prop>/autopilot/internal/lookahead-5-sec-airspeed-kt</prop>
     </input>
     <reference>
       <prop>/autopilot/settings/target-speed-kt</prop>
@@ -542,9 +542,9 @@
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
                           <!-- unfiltered derivative error -->
-      <Ti>60.0</Ti>        <!-- integrator time -->
+      <Ti>40.0</Ti>        <!-- integrator time -->
       <Td>0.00001</Td>    <!-- derivator time -->
-      <u_min>-15.0</u_min><!-- minimum output clamp -->
+      <u_min>-20.0</u_min><!-- minimum output clamp -->
       <u_max>45.0</u_max> <!-- maximum output clamp -->
     </config>
   </pid-controller>
@@ -566,7 +566,7 @@
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.05</Kp>      <!-- proportional gain -->
+      <Kp>-0.010</Kp>      <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->

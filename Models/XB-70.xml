@@ -300,7 +300,7 @@
   
   <!-- After burner Flames -->
   <model>
-    <path>Aircraft/XB-70/Models/Effects/AftB/AftB.xml</path>
+    <path>Aircraft/XB-70/Models/Effects/AftB/AftB5.xml</path>
     <offsets>
       <x-m> 29.414 </x-m>
       <y-m> -3.718 </y-m>
@@ -309,7 +309,7 @@
   </model>
     
   <model>
-    <path>Aircraft/XB-70/Models/Effects/AftB/AftB.xml</path>
+    <path>Aircraft/XB-70/Models/Effects/AftB/AftB4.xml</path>
     <offsets>
       <x-m> 29.414 </x-m>
       <y-m> -2.229 </y-m>
@@ -318,7 +318,7 @@
   </model>
 	
   <model>
-    <path>Aircraft/XB-70/Models/Effects/AftB/AftB.xml</path>
+    <path>Aircraft/XB-70/Models/Effects/AftB/AftB3.xml</path>
     <offsets>
       <x-m> 29.414 </x-m>
       <y-m> -0.739 </y-m>
@@ -327,7 +327,7 @@
   </model>
 	
   <model>
-    <path>Aircraft/XB-70/Models/Effects/AftB/AftB.xml</path>
+    <path>Aircraft/XB-70/Models/Effects/AftB/AftB2.xml</path>
     <offsets>
       <x-m> 29.414 </x-m>
       <y-m>  0.739 </y-m>
@@ -336,7 +336,7 @@
   </model>
 	
   <model>
-    <path>Aircraft/XB-70/Models/Effects/AftB/AftB.xml</path>
+    <path>Aircraft/XB-70/Models/Effects/AftB/AftB1.xml</path>
     <offsets>
       <x-m> 29.414 </x-m>
       <y-m>  2.229 </y-m>
@@ -345,7 +345,7 @@
   </model>
 	
   <model>
-    <path>Aircraft/XB-70/Models/Effects/AftB/AftB.xml</path>
+    <path>Aircraft/XB-70/Models/Effects/AftB/AftB0.xml</path>
     <offsets>
       <x-m> 29.414 </x-m>
       <y-m>  3.718 </y-m>
@@ -1701,16 +1701,23 @@
   
   <animation>
     <type>rotate</type>
-    <property>surface-positions/speedbrake-pos-norm</property>
+    <object-name>ChuteDoorLeft</object-name>
+	<property>surface-positions/speedbrake-pos-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>   0.0 </dep></entry>
-      <entry><ind> 0.3 </ind><dep> 100.9 </dep></entry>
-    </interpolation>
+		<entry>
+			<ind>0</ind>
+			<dep>0</dep>
+		</entry>
+		<entry>
+			<ind>0.3</ind>
+			<dep>100.90</dep>
+		</entry>
+	</interpolation>
     <axis>
-      <x1-m> 17.851 </x1-m>
+      <x1-m>  17.851 </x1-m>
       <y1-m> -0.582 </y1-m>
       <z1-m>  3.364 </z1-m>
-      <x2-m> 19.381 </x2-m>
+      <x2-m>  19.381 </x2-m>
       <y2-m> -0.589 </y2-m>
       <z2-m>  3.265 </z2-m>
     </axis>
@@ -1718,21 +1725,28 @@
   
   <animation>
     <type>rotate</type>
-    <property>surface-positions/speedbrake-pos-norm</property>
+    <object-name>ChuteDoorRight</object-name>
+	<property>surface-positions/speedbrake-pos-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>    0.0 </dep></entry>
-      <entry><ind> 0.3 </ind><dep> -100.9 </dep></entry>
-    </interpolation>
+		<entry>
+			<ind>0</ind>
+			<dep>0</dep>
+		</entry>
+		<entry>
+			<ind>0.3</ind>
+			<dep>-100.90</dep>
+		</entry>
+	</interpolation>
     <axis>
-      <x1-m> 17.851 </x1-m>
+      <x1-m>  17.851 </x1-m>
       <y1-m>  0.582 </y1-m>
       <z1-m>  3.364 </z1-m>
-      <x2-m> 19.381 </x2-m>
+      <x2-m>  19.381 </x2-m>
       <y2-m>  0.589 </y2-m>
       <z2-m>  3.265 </z2-m>
     </axis>
   </animation>
-  
+    
   <model>
     <path>Aircraft/XB-70/Models/Effects/Chutes/DragChutes.xml</path>
   </model>
