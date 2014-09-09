@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- <PropertyList include="XB-70-jsbsim-cnf.xml"> -->
+<PropertyList include="XB-70-yasim-cnf.xml">
+
+  <sim>
+
+    <description>North American Valkyrie (YASim)</description>
+    <author>Pierre Duval (3D), Lionel ADAM (FDM)</author>
+
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+  </sim>
+
+</PropertyList>
+

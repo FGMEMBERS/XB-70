@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+************************************************************************
+North American Valkyrie XB-70
+Septembre 2011 Pierre Duval
+************************************************************************
+-->
+
+<PropertyList include="XB-70-base.xml">
+
+  <sim>
+
+    <description>North American Valkyrie XB-70 (YASim)</description>
+    <author>Pierre Duval (3D), Lionel ADAM (FDM)</author>
+    <flight-model>yasim</flight-model>
+    <aero>XB-70-yasim</aero>
+
+ <systems>
+  <autopilot>
+   <path>Aircraft/XB-70/Systems/autopilot-yasim.xml</path>
+  </autopilot>
+ </systems> 
+
+
+  </sim>
+  
+  <nasal>
+    <XB70>
+      <file>Aircraft/XB-70/Nasal/yasim.nas</file>
+    </XB70>
+  </nasal>
+  
+</PropertyList>

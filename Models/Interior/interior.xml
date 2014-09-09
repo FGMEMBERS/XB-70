@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>YokeL</object-name>
+    <object-name>LBL1</object-name>
+    <object-name>YokeR</object-name>
+    <object-name>LBL2</object-name>
+    <object-name>EngLever01</object-name>
+    <object-name>EngLever02</object-name>
+    <object-name>EngLever03</object-name>
+    <object-name>EngLever04</object-name>
+    <object-name>EngLever05</object-name>
+    <object-name>EngLever06</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Pilot seat -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Elements/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -23.04059 </x-m>
+      <y-m>  -0.51193 </y-m>
+      <z-m>   3.95307 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Copilot seat -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Elements/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -23.04059 </x-m>
+      <y-m>   0.51193 </y-m>
+      <z-m>   3.95307 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Panel -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -23.935 </x-m>
+      <y-m>   0.000 </y-m>
+      <z-m>   4.020 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Yokes -->
+  <animation>
+    <type>rotate</type>
+    <object-name>YokeL</object-name>
+    <property>controls/flight/aileron</property>
+    <factor> -40 </factor>
+    <center>
+      <x-m> -23.703 </x-m>
+      <y-m> -0.506 </y-m>
+      <z-m>  3.926 </z-m>
+    </center>
+    <axis>
+      <x>  0.60 </x>
+      <y> 0 </y>
+      <z>  0.30 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>YokeR</object-name>
+    <property>controls/flight/aileron</property>
+    <factor> -40 </factor>
+    <center>
+      <x-m> -23.703 </x-m>
+      <y-m>  0.506 </y-m>
+      <z-m>  3.926 </z-m>
+    </center>
+    <axis>
+      <x>  0.60 </x>
+      <y> 0 </y>
+      <z>  0.30 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>YokeL</object-name>
+    <object-name>LBL1</object-name>
+    <property>controls/flight/elevator</property>
+    <factor> -0.01 </factor>
+    <center>
+      <x-m> -23.703 </x-m>
+      <y-m> -0.506 </y-m>
+      <z-m>  3.926 </z-m>
+    </center>
+    <axis>
+      <x>  0.60 </x>
+      <y> 0 </y>
+      <z>  0.30 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>YokeR</object-name>
+    <object-name>LBL2</object-name>
+    <property>controls/flight/elevator</property>
+    <factor> -0.01 </factor>
+    <center>
+      <x-m> -23.703 </x-m>
+      <y-m>  0.506 </y-m>
+      <z-m>  3.926 </z-m>
+    </center>
+    <axis>
+      <x>  0.60 </x>
+      <y> 0 </y>
+      <z> 0.30 </z>
+    </axis>
+  </animation>
+  
+  <!-- EngLevers --> 
+  <animation>
+        <type>rotate</type>
+        <object-name>EngLever01</object-name>
+        <property>controls/engines/engine[0]/throttle</property>
+        <factor>-51.99</factor>
+        <center>
+            <x-m>-23.721</x-m>
+            <y-m>0.000</y-m>
+            <z-m>3.497</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+	
+	<animation>
+        <type>rotate</type>
+        <object-name>EngLever02</object-name>
+        <property>controls/engines/engine[1]/throttle</property>
+        <factor>-51.99</factor>
+        <center>
+            <x-m>-23.721</x-m>
+            <y-m>0.000</y-m>
+            <z-m>3.497</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+	
+	<animation>
+        <type>rotate</type>
+        <object-name>EngLever03</object-name>
+        <property>controls/engines/engine[2]/throttle</property>
+        <factor>-51.99</factor>
+        <center>
+            <x-m>-23.721</x-m>
+            <y-m>0.000</y-m>
+            <z-m>3.497</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+	
+	<animation>
+        <type>rotate</type>
+        <object-name>EngLever04</object-name>
+        <property>controls/engines/engine[3]/throttle</property>
+        <factor>-51.99</factor>
+        <center>
+            <x-m>-23.721</x-m>
+            <y-m>0.000</y-m>
+            <z-m>3.497</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+	
+	<animation>
+        <type>rotate</type>
+        <object-name>EngLever05</object-name>
+        <property>controls/engines/engine[4]/throttle</property>
+        <factor>-51.99</factor>
+        <center>
+            <x-m>-23.721</x-m>
+            <y-m>0.000</y-m>
+            <z-m>3.497</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+	
+	<animation>
+        <type>rotate</type>
+        <object-name>EngLever06</object-name>
+        <property>controls/engines/engine[5]/throttle</property>
+        <factor>-51.99</factor>
+        <center>
+            <x-m>-23.721</x-m>
+            <y-m>0.000</y-m>
+            <z-m>3.497</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+	
+	<!-- flap lever -->
+  <animation>
+    <type>rotate</type>
+    <object-name>FlapLever</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>-40.0</factor>
+    <center>
+      <x-m> -23.449 </x-m>
+      <y-m>  -0.154 </y-m>
+      <z-m>   3.593 </z-m>
+    </center>
+    <axis>
+      <x> 0.00 </x>
+      <y> 1.00 </y>
+      <z> 0.00 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

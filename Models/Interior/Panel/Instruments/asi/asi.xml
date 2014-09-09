@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Speed/Mach Indicator -->
+
+<PropertyList>
+
+  <path>asi.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>visse1</object-name>
+    <object-name>visse2</object-name>
+    <object-name>visse3</object-name>
+    <object-name>visse4</object-name>
+    <object-name>indalt</object-name>
+    <object-name>indmach</object-name>
+    <object-name>indknots</object-name>
+    <object-name>indaltlmob</object-name>
+    <object-name>knots1</object-name>
+    <object-name>knots2</object-name>
+    <object-name>knots3</object-name>
+    <object-name>mach1</object-name>
+    <object-name>mach2</object-name>
+    <object-name>mach3</object-name>
+    <object-name>g1</object-name>
+    <object-name>g2</object-name>
+    <object-name>g3</object-name>
+
+    
+  </animation>
+
+  <!--<animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>-->
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>indalt</object-name>
+    <object-name>indmach</object-name>
+    <object-name>indknots</object-name>
+    <object-name>indaltlmob</object-name>
+    <object-name>knots1</object-name>
+    <object-name>knots2</object-name>
+    <object-name>knots3</object-name>
+    <object-name>mach1</object-name>
+    <object-name>mach2</object-name>
+    <object-name>mach3</object-name>
+    <object-name>g1</object-name>
+    <object-name>g2</object-name>
+    <object-name>g3</object-name>
+    <emission>
+      <red>   0.030 </red>
+      <green> 0.015 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>indmach</object-name>
+    <property>velocities/mach</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.050 </dep></entry>
+      <entry><ind> 0.1 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 1.5 </ind><dep> -0.703 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+ 
+  <animation>
+    <type>textranslate</type>
+    <object-name>indknots</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>  0.050 </dep></entry>
+      <entry><ind> 100 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 900 </ind><dep> -0.800 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>knots1</object-name>
+    <property>autopilot/settings/target-speed-kt</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>knots2</object-name>
+    <property>autopilot/settings/target-speed-kt</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>knots3</object-name>
+    <property>autopilot/settings/target-speed-kt</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+ 
+  <!-- SWITCH 
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.019 </x-m>
+      <y-m> -0.017 </y-m>
+      <z-m> -0.83 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/divers/switch.xml</path>
+    <offsets>
+      <x-m>  0.019 </x-m>
+      <y-m>  0.017 </y-m>
+      <z-m> -0.83 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>-->
+
+</PropertyList>

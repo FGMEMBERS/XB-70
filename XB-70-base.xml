@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+ 
+    <author>Pierre Duval (3D)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+   
+    <fuel-fraction>1.0</fuel-fraction>
+  
+    <startup>
+      <splash-texture>Aircraft/XB-70/XB-70-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/XB-70/Models/XB-70.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/XB-70/Models/Weapons/DropIT.xml</path>
+    </submodels>
+
+    <sound>
+      <path>Aircraft/XB-70/Sounds/XB-70-sound.xml</path>
+    </sound>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
+        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
+        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
+        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>XB-70 North American Valkyrie</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close crew door</desc>
+      </key>
+      <key>
+        <name>D</name>
+        <desc>Open/Close weapons bay door</desc>
+      </key>>
+      <key>
+        <name>F/f</name>
+        <desc>Wing tips folding/unfolding</desc>
+      </key>
+      <key>
+	      <name>Ctrl-B</name>
+	      <desc>Drag chutes</desc>
+      </key>
+      <key>
+        <name>Ctrl-j</name>
+        <desc>Release bomb</desc>
+      </key>	  
+        <text>
+To reach cruise altitude and speed :
+- apply full throttle,
+- "speed with pitch", set the speed to 300 kts and wait until about 38/40 000 ft,
+- set the speed to 450 kts : you're going to have a short dive, pass mach 1, then resume your climb,
+  (you may pass the mach without diving, it's just easier that way)
+- wait some minutes, you're going to fly at mach 3.1, at more than 70 000 ft.
+
+Wing tips folding :
+- necessary to prevent nose-down pitching, as the aerodynamic center of the wing moves backward with speed,
+- again, be patient, complete folding needs 65s,
+- first step at mach 0.95 or 400 kts IAS, whichever is lower,
+- complete folding above mach 1.4.
+
+Flaps :
+- one position only, beware the high pitching moment (the canards are far ahead the CoG),
+- only below 270 kts IAS.
+
+Many thanks to Pierre Duval for this fantastic model.
+        </text>
+    </help>
+
+    <menubar include="Dialogs/XB-70-menu.xml"/>
+
+  <flaps>
+	  <setting>0.000</setting>  <!-- flaps up -->
+	  <setting>1.000</setting>  <!-- flaps 20 deg -->
+  </flaps>
+
+  <wing-sweep>
+	  <setting>0.000</setting>  <!-- wing tips up -->
+	  <setting>0.385</setting>  <!-- wing tips -25 deg -->
+	  <setting>1.000</setting>  <!-- wing tips -65 deg -->
+  </wing-sweep>
+
+<!-- Sent to cnf files, since I'm unable to make an unique autopilot working for both jsbsim and yasim FDMs -->
+<!--
+    <systems>
+      <autopilot>
+        <path>Aircraft/XB-70/Systems/autopilot.xml</path>
+      </autopilot>
+    </systems> 
+-->
+
+  </sim>
+
+  <surface-positions>
+    <wing-fold-pos-norm alias="/instrumentation/doors/wings/position-norm" />
+  </surface-positions>
+
+  <input>
+      <keyboard include="Nasal/xb-70-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <doors>
+      <file>Aircraft/XB-70/Nasal/doors.nas</file>
+    </doors>
+    <xb70>
+      <file>Aircraft/XB-70/Nasal/liveries.nas</file>
+      <file>Aircraft/XB-70/Nasal/light.nas</file>
+    </xb70>
+  </nasal>
+
+</PropertyList>

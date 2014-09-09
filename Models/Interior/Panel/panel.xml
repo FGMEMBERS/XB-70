@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel1</object-name>
+    
+ 
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m> -0.508 </y-m>
+      <z-m>  0.005 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m>  0.508 </y-m>
+      <z-m>  0.005 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- HSI -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
+    <offsets>
+      <x-m> -0.014 </x-m>
+      <y-m> -0.508 </y-m>
+      <z-m> -0.139 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
+    <offsets>
+      <x-m> -0.014 </x-m>
+      <y-m>  0.508 </y-m>
+      <z-m> -0.135 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- ASI/Mach -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.015 </x-m>
+	  <y-m> -0.620 </y-m>
+      <z-m> -0.005 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.015 </x-m>
+      <y-m>  0.396 </y-m>
+      <z-m> -0.005 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.015 </x-m>
+      <y-m> -0.396 </y-m>
+      <z-m> -0.005 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.015 </x-m>
+      <y-m>  0.620 </y-m>
+      <z-m> -0.005 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- AI Standby -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/standby/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.016 </x-m>
+      <y-m> -0.254 </y-m>
+      <z-m> 0.046 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- ALT standby -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/standby/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.016 </x-m>
+      <y-m> -0.196 </y-m>
+      <z-m>  0.046 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- ASI standby -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/standby/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.016 </x-m>
+      <y-m> -0.620 </y-m>
+      <z-m> -0.135 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/standby/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.016 </x-m>
+      <y-m>  0.620 </y-m>
+      <z-m> -0.135 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+
+  <!-- TACHEMETER -->
+  <!-- TAC1 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/tac/tac.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.133 </y-m>
+      <z-m>  0.001 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- TAC2 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/tac/tac.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.082 </y-m>
+      <z-m>  0.001 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- TAC3 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/tac/tac.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.030 </y-m>
+      <z-m>  0.001 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- TAC4 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/tac/tac.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.030 </y-m>
+      <z-m>  0.001 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- TAC5 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/tac/tac.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.082 </y-m>
+      <z-m>  0.001 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- TAC6 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/tac/tac.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.133 </y-m>
+      <z-m>  0.001 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- EGT -->
+  <!-- egt1 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.133 </y-m>
+      <z-m> -0.049 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- egt2 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.082 </y-m>
+      <z-m> -0.049 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- egt3 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.030 </y-m>
+      <z-m> -0.049 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- egt4 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.030 </y-m>
+      <z-m> -0.049 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- egt5 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.082 </y-m>
+      <z-m> -0.049 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- egt6 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.133 </y-m>
+      <z-m> -0.049 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- Nozzles -->
+  <!-- Nozzle1 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/nozzle/nozzle.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.133 </y-m>
+      <z-m> -0.099 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- Nozzle2 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/nozzle/nozzle.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.082 </y-m>
+      <z-m> -0.099 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- Nozzle3 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/nozzle/nozzle.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.030 </y-m>
+      <z-m> -0.099 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- Nozzle4 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/nozzle/nozzle.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.030 </y-m>
+      <z-m> -0.099 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- Nozzle5 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/nozzle/nozzle.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.082 </y-m>
+      <z-m> -0.099 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  <!-- Nozzle6 -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/nozzle/nozzle.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m>  0.133 </y-m>
+      <z-m> -0.099 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+
+
+  <!-- Info train d'atterrissage -->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/divers/gearA.xml</path>
+    <offsets>
+      <x-m> -0.010 </x-m>
+      <y-m> -0.002 </y-m>
+      <z-m> -0.245 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/divers/gearG.xml</path>
+    <offsets>
+      <x-m> -0.010 </x-m>
+      <y-m> -0.021 </y-m>
+      <z-m> -0.285 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/divers/gearD.xml</path>
+    <offsets>
+      <x-m> -0.010 </x-m>
+      <y-m>  0.016 </y-m>
+      <z-m> -0.285 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!--turn-->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/Turn/turn_bank.xml</path>
+    <offsets>
+      <x-m> -0.020 </x-m>
+      <y-m> -0.317 </y-m>
+      <z-m>  0.043 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!--Flaps-->
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/Flaps/flaps.xml</path>
+    <offsets>
+      <x-m> -0.019 </x-m>
+      <y-m> -0.317 </y-m>
+      <z-m>  0.119 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- epr--> 
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/epr/epr.xml</path>
+    <offsets>
+      <x-m> -0.019 </x-m>
+      <y-m>  0.322 </y-m>
+      <z-m>  0.039 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/epr/epr.xml</path>
+    <offsets>
+      <x-m> -0.019 </x-m>
+      <y-m>  0.197 </y-m>
+      <z-m>  0.039 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- Gmeter --> 
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/Gmeter/gmeter.xml</path>
+    <offsets>
+      <x-m> -0.010 </x-m>
+      <y-m> -0.462 </y-m>
+      <z-m>  0.111 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- Clock--> 
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m> -0.015 </x-m>
+      <y-m> -0.415 </y-m>
+      <z-m> -0.184 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- AOA --> 
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/aoa/aoa-gauge.xml</path>
+    <offsets>
+      <x-m> -0.017 </x-m>
+      <y-m> -0.368 </y-m>
+      <z-m> -0.184 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+
+  <!-- empty for the moment--> 
+  <model>
+    <path>Aircraft/XB-70/Models/Interior/Panel/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.275 </y-m>
+      <z-m> -0.185 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  
+
+</PropertyList>
+

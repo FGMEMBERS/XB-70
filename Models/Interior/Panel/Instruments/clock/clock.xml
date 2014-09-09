@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>clock.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>heures</object-name>
+    <object-name>minutes</object-name>
+    <object-name>secondes</object-name>
+    <object-name>visse1</object-name>
+    <object-name>visse2</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>heures</object-name>
+    <object-name>minutes</object-name>
+    <object-name>secondes</object-name>
+    <emission>
+      <red>   0.030 </red>
+      <green> 0.015 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>heures</object-name>
+    <property>/instrumentation/clock/local-hour</property>
+    <factor>30</factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>minutes</object-name>
+    <property>/instrumentation/clock/indicated-min</property>
+    <factor>6</factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>secondes</object-name>
+    <property>/instrumentation/clock/indicated-sec</property>
+    <factor>6</factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
