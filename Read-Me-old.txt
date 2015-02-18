@@ -1,4 +1,4 @@
-﻿XB-70(North American Valkyrie)_version 2
+XB-70(North American Valkyrie)_version 2
 -------------
 
 Changes in this version:
