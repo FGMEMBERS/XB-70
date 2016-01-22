@@ -3,11 +3,11 @@
 <PropertyList include="XB-70-jsbsim-cnf.xml">
 
   <sim>
-  
+
     <description>North American Valkyrie (JSBSim)</description>
     <author>Pierre Duval</author>
-    
+     <variant-of>XB-70</variant-of>
+     
   </sim>
 
 </PropertyList>
-
