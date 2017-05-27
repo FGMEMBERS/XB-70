@@ -7,6 +7,18 @@
     <description>North American Valkyrie (JSBSim)</description>
     <author>Pierre Duval</author>
      <variant-of>XB-70</variant-of>
+
+    <tags>
+      <tag>bomber</tag>
+      <tag>1960s</tag>
+      <tag>delta</tag>
+      <tag>canard</tag>
+      <tag>prototype</tag>
+      <tag>retractable-gear</tag>
+      <tag>supersonic</tag>
+      <tag>afterburner</tag>
+      <tag>jet</tag>
+    </tags>
      
   </sim>
 

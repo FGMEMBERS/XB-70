@@ -15,6 +15,18 @@
       <model type="int">   4 </model>
     </rating>
 
+    <tags>
+      <tag>bomber</tag>
+      <tag>1960s</tag>
+      <tag>delta</tag>
+      <tag>canard</tag>
+      <tag>prototype</tag>
+      <tag>retractable-gear</tag>
+      <tag>supersonic</tag>
+      <tag>afterburner</tag>
+      <tag>jet</tag>
+    </tags>
+
   </sim>
 
 </PropertyList>
